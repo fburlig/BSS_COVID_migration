@@ -1,4 +1,4 @@
-# BSS_COVID_migration
+# Burlig, Sudarshan, and Schlauch (2020) replication archive
 This repository contains all data and code required to replicate Burlig, Sudarshan, and Schlauch (2020): "Quantifying the effect of domestic travel bans on COVID-19 infections". The main text of the paper can be found in [`BSS_COVID_migration.pdf`](LINK), and the Supplementary Information can be found in [`BSS_COVID_migration_SI.pdf`](LINK) (note that these are currently blank; we will update when permitted by the journal).
 
 ### Software
