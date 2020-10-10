@@ -26,7 +26,7 @@ The full project, starting from raw data and ending with figures and tables, can
 
 Note that prior to running the `MASTER` file, researchers must set the indicated file paths at the top of this `.do` file. In addition, replicators must change the directory path (the `setwd()` step) at the top of _each_ included `.R` script that they intend to run. 
 
-The full file structure for this project is below. We populate all datasets required for researchers to run `MASTER_run_replication.do`, though some folders remain empty for the aforementioned confidentiality reasons.
+The public data is in [`BSS_COVID_migration_data_public.zip`](https://github.com/fburlig/BSS_COVID_migration/blob/master/BSS_COVID_migration_data_public.zip). Researchers should unzip this folder and assemble the replication folder structure as described below. The public ZIP folder populates all datasets required for researchers to run `MASTER_run_replication.do`, though some folders remain empty for the aforementioned confidentiality reasons.
 
 ```
 MAIN PROJECT FOLDER
