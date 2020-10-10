@@ -2,7 +2,7 @@
 This repository contains all data and code required to replicate Burlig, Sudarshan, and Schlauch (2020): "Quantifying the effect of domestic travel bans on COVID-19 infections". The main text of the paper can be found in [`BSS_COVID_migration.pdf`](LINK), and the Supplementary Information can be found in [`BSS_COVID_migration_SI.pdf`](LINK) (note that these are currently blank; we will update when permitted by the journal).
 
 ### Required data and file structure
-Due to a non-disclosure agreement between the financial services firm that provided the remittances data, we are unable to provide the raw data publicly. Academic researchers wishing to replicate our results from scratch can contact us for details on how to obtain the remittances data. Our non-disclosure agreement does permit us to share aggregated data, so this repository contains all data required to reproduce our empirical estimates and all figures/tables in the main paper and SI. As a result, we leave the `Data/Raw` data folder empty. We provide the required data in the `XXX` folder.
+Due to a non-disclosure agreement between the financial services firm that provided the remittances data, we are unable to provide the raw data publicly. Academic researchers wishing to replicate our results from scratch can contact us for details on how to obtain the remittances data. Our non-disclosure agreement does permit us to share aggregated data, so this repository contains all data required to reproduce our empirical estimates and all figures/tables in the main paper and SI. As a result, we leave the `Data/Raw` data folder empty. We provide the required data in the `Data/Generated` folder.
 
 The file structure for this project is as follows (OBVIOUSLY UPDATE ME TO MATCH FOR THIS PROJECT):
 ```
@@ -24,20 +24,20 @@ MAIN PROJECT FOLDER
 |       |--  Mumbai Full
 |       |--  Shapefiles
 |   |-- Generated
-|       |--  CA school info
-|       |--  SunriseSunsetHoliday
-|       |--  MesoWest FINAL
-|   |-- Raw
-|       |-- PGE_energy_combined
-|                    |-- Customer info
-|                    |-- Unzipped electric 15 min
-|                    |-- Unzipped electric 60 min
-|       |--  PGE_Oct_2016
-|   |-- Temp
-|-- Results
-|   |-- Appendix
+|       |--  Intermediate
+|            |--  Banks
+|            |--  Census attributes
+|            |--  Covid
+|            |--  Eko Transaction Volume
+|            |--  Eko_sample
+|            |--  Event study regs
+|            |--  Migration
+|            |--  Shapefiles
+|            |--  SIER model
+|       |--  Final
+|            |--  Results
 ```
-Researchers who obtain the raw data for this project can replicate our results by running the `MASTER_run_full_project.do` file. This calls all required `.do` files and `.R` scripts in order. We have provided all data required to produce the final outputs. Any replicator can run the `MASTER_run_full_project.do` file, including the initialization steps, and then starting from Step 9, to fully replicate our results. The included `scheme-fb.scheme` is required for figures to have the same aesthetics as in the main paper.
+Researchers who obtain the raw data for this project can replicate our results by running the `MASTER_run_full_project.do` file. This calls all required `.do` files and `.R` scripts in order. We have provided all data required to produce the final outputs in the `/Data/Generated` folder. (Some of the subfolders in this directory are blank in the publicly uploaded file; these are intermediate steps which. All files required to reproduce our exhibits are provided.) Any replicator can run the `MASTER_run_full_project.do` file, including the initialization steps, and then starting from Step 9, to fully replicate our results. The included `scheme-fb.scheme` is required for figures to have the same aesthetics as in the main paper.
 
 Note that prior to running this file, researchers must set the indicated file paths at the top of this `.do` file. In addition, replicators must change the directory path (the `setwd()` step) at the top of _each_ included `.R` script that they intend to run. 
 
