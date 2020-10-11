@@ -22,7 +22,9 @@ This repository uses both `Stata` and `R`. All code has been validated to run on
 ### Code and data
 Due to a non-disclosure agreement between the financial services firm that provided the remittances data, we are unable to provide the raw data publicly. Our non-disclosure agreement does permit us to share aggregated data. As a result, this repository contains all data required to reproduce our empirical estimates and all figures/tables in the main paper and SI, but contains only the code for the early-stage data cleaning. 
 
-The full project, starting from raw data and ending with figures and tables, can be replicated by running `MASTER_run_full_project.do`. This calls all required `.do` files and `.R` scripts in order. A replicator can run the `MASTER_run_replication.do` file, which fully replicates the results starting from the cleaned (and publicly available) data. These two files call various subprograms, contained in the `/Code` folder. 
+The full project, starting from raw data and ending with figures and tables, can be replicated by running `MASTER_run_full_project.do`. This calls all required `.do` files and `.R` scripts in order. 
+
+Replicators should run the `MASTER_run_replication.do` file, which fully replicates the results starting from the cleaned (and publicly available) data. These two files call various subprograms, contained in the `/Code` folder. 
 
 Note that prior to running the `MASTER` file, researchers must set the indicated file paths at the top of this `.do` file. In addition, replicators must change the directory path (the `setwd()` step) at the top of _each_ included `.R` script that they intend to run. 
 
