@@ -1,7 +1,4 @@
-* Create event study figures
-
-
-* Plot event study regression results
+* Plot permutation inference results
 
 *****************************************************************************
 *****************************************************************************
@@ -34,14 +31,14 @@ local true_beta_val = 551.62
 
 * Plot
 twoway ///
-	(pci 17.5 `true_beta_val' 17.5 `=`true_beta_val'-55', ///
+	(pci 13.5 `true_beta_val' 13.5 `=`true_beta_val'-55', ///
 		lcolor(black) lwidth(medium) ///
-		text(17.5 `=`true_beta_val'-150' ///
+		text(13.5 `=`true_beta_val'-150' ///
 		"Observed point" "estimate in" "real data:" "551,620", ///
 		size(medium) color(black))) ///
-	(pci 10 `=`true_beta_val'-1' 10 `=`true_beta_val'-25', ///
+	(pci 9.5 `=`true_beta_val'-1' 9.5 `=`true_beta_val'-25', ///
 		lcolor(white) lwidth(medium) ///
-		text(10 `=`true_beta_val'-150' ///
+		text(9.5 `=`true_beta_val'-150' ///
 		"Permutation" "inference" "p-value:" "< 0.0001", ///
 		size(medium) color(black))) ///
 	(histogram beta, percent color(midblue*0.5) ///
