@@ -82,7 +82,6 @@ twoway ///
 	(line rural_infections date_stata if phase2 == 0, msize(medthick) msymbol(circle) mlcolor(midblue) mfcolor(white) lwidth(medthick) lcolor(midblue*1.5) lp(solid) lw(medthick) ///
 	text(350 `=`may8'-35' "Excess cases" "from Phase 3" "restrictions")) ///
 	, ///
-	title("{bf: {fontface Arial: A}}", pos(10) size(vhuge)) ///
 	xlabel(, labsize(large)) ///
 	ylabel(, labsize(large)) ///
 	xtitle("Duration of travel restrictions (days)", size(large)) ///
