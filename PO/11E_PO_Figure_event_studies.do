@@ -58,8 +58,7 @@ twoway ///
 		xtitle("") ///
 		xsize(10) ///
 		xsc(r(77 235)) ///
-		ylabel(0(0.02)0.06) ///
-		title("{bf: {fontface Arial: B}}", pos(10) size(vhuge)) ///
+		ylabel(0(0.02)0.06)
 
 graph export "$dirpath_out/Figure_incmarg_cases.pdf", replace
 
