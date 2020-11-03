@@ -51,18 +51,18 @@ file write myfile "Parameter & Value & Source"
 file write myfile " \\ \midrule " _n
 
 //Parameters/variables/values
-file write myfile "Source (Mumbai) population & 12,442,373 & \cite{census2011,mahapop2020} \\" _n
-file write myfile "Number of departing migrants (Phase 2) & 258,399 & \cite{5m_left,3m_left,bbcwalk,nytwalk,2m_returning} \\" _n
-file write myfile "Population (Phase 2 destinations) & 13,694,348 & \cite{census2011,mahapop2020} \\" _n
-file write myfile "Number of departing migrants (Phase 3) & 333,884 & \cite{5m_left,3m_left,bbcwalk,nytwalk,2m_returning} \\" _n
-file write myfile "Population (Phase 3 destinations) & 76,808,204 & \cite{census2011,mahapop2020} \\" _n
-file write myfile "Mumbai positivity rate (July 15th) & 32.7 percent & \cite{tata2020} \\" _n
+file write myfile "Source (Mumbai) population & 12,442,373 &\supercite{census2011,mahapop2020} \\" _n
+file write myfile "Number of departing migrants (Phase 2) & 258,399 &\supercite{5m_left,3m_left,nytwalk,2m_returning} \\" _n
+file write myfile "Population (Phase 2 destinations) & 13,694,348 &\supercite{census2011,mahapop2020} \\" _n
+file write myfile "Number of departing migrants (Phase 3) & 333,884 &\supercite{5m_left,3m_left,nytwalk,2m_returning} \\" _n
+file write myfile "Population (Phase 3 destinations) & 76,808,204 &\supercite{census2011,mahapop2020} \\" _n
+file write myfile "Mumbai positivity rate (July 15th) & 32.7 percent &\supercite{tata2020} \\" _n
 file write myfile "Seed infections on March 25th & 500 & Assumed \\" _n
-file write myfile "$R_{0}$ Mumbai & 3.83 & Calibrated to match \cite{tata2020} \\" _n
+file write myfile "$R_{0}$ Mumbai & 3.83 & Calibrated to match\supercite{tata2020} \\" _n
 file write myfile "$R_{0}$ Phase 2 destinations & 1.91 & 50\% of $R_{0}$ source \\" _n
-file write myfile "$R_{0}$ Phase 3 destinations & 1.45 & Maharashtra estimate from \cite{marimuthu2020} \\" _n
-file write myfile "Latent period ($1/ \omega$) & 10 days & \cite{covoidarticle,covoidpackage} \\" _n
-file write myfile "Infectious period ($1/ \lambda$) & 10 days & \cite{covoidarticle,covoidpackage} \\" _n
+file write myfile "$R_{0}$ Phase 3 destinations & 1.45 & Maharashtra estimate from\supercite{marimuthu2020} \\" _n
+file write myfile "Latent period ($1/ \omega$) & 10 days &\supercite{covoidarticle,covoidpackage} \\" _n
+file write myfile "Infectious period ($1/ \lambda$) & 10 days &\supercite{covoidarticle,covoidpackage} \\" _n
 
 
 file write myfile "\bottomrule " _n 
