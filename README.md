@@ -24,11 +24,11 @@ This repository contains all code and data required to reproduce our estimates, 
 
 The full project, starting from raw data and ending with figures and tables, can be replicated by running `MASTER_run_full_project.do`. This calls all required `.do` files and `.R` scripts in order. 
 
-Replicators should run the `MASTER_run_replication.do` file, which fully replicates the results starting from the cleaned data. These two files call various subprograms, contained in the `/Code` folder. 
+Replicator interested in starting from cleaned data and producing figures/tables only should run the `MASTER_run_replication.do` file, which fully replicates the results starting from the cleaned data. These two files call various subprograms, contained in the `/Code` folder. 
 
 Prior to running the `MASTER` file, researchers must set the indicated file paths at the top of this `.do` file. In addition, replicators must change the directory path (the `setwd()` step) at the top of _each_ included `.R` script that they intend to run. 
 
-All data are located in https://uchicago.box.com/s/f0ge88m9iab9u03lihimcmx6u6w9iu9c. Researchers should unzip this folder and assemble the replication folder structure as described below. The ZIP folder populates all datasets required for researchers to run `MASTER_run_full_project.do` and `MASTER_run_replication.do`.
+All data are stored in [Box](https://uchicago.box.com/s/f0ge88m9iab9u03lihimcmx6u6w9iu9c). Researchers should download and unzip this folder and assemble the replication folder structure as described below. The ZIP folder populates all datasets required for researchers to run `MASTER_run_full_project.do` and `MASTER_run_replication.do`.
 
 ```
 MAIN PROJECT FOLDER
