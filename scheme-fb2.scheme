@@ -1,0 +1,113 @@
+* title                                    scheme-fb2.scheme
+
+* blues scheme, with white backgrounds and horizontal axis ticks
+
+
+*!  version 2  17aug2018
+#include s1mono
+
+// **** BASIC CHART AREA SETUP ****
+
+// Legend outside in lower right corner; 1 column; short signatures; no frame
+clockdir legend_position     6
+numstyle legend_rows 1
+numstyle legend_cols 0
+
+ gsize legend_key_xsize       4
+
+yesno legend_col_first       no
+yesno legend_row_first       yes
+
+margin axis_title small
+
+
+// horizontal y-axis ticks
+anglestyle vertical_tick	horizontal
+
+// remove box around legend
+linestyle  legend		none
+
+// remove box around plot (axes rather than square)
+ linestyle  plotregion		none
+
+
+ // extend axes?
+ yesno extend_axes_low        yes
+ yesno extend_axes_high       yes
+ yesno extend_axes_full_low   yes
+ yesno extend_axes_full_high  yes
+
+
+
+
+
+
+
+// *** PLOT ITEM SETUP ***
+
+
+// ** MARKER SET-UP **
+// marker sizes
+symbolsize         small
+symbolsize p       small
+
+// marker shapes
+symbol p circle
+symbol p1 circle
+symbol p2 circle
+symbol p3 circle
+symbol p4 circle
+
+// marker colors
+color p midblue
+color p1 midblue
+color p2 navy
+color p3 eltblue
+color p4 blue
+
+// marker fill? ** STILL TO FIGURE OUT **
+color pline green
+color p1line green
+
+// ** LINE SET-UP **
+// line pattern
+linepattern plineplot   solid
+linepattern p1lineplot  solid
+linepattern p2lineplot  longdash_dot
+linepattern p3lineplot  dash
+linepattern p4lineplot  shortdash_dot
+
+// line color
+color plineplot     black
+color p1lineplot   	black
+color p2lineplot    black
+color p3lineplot    black
+color p4lineplot    black
+
+// line width
+linewidth plineplot   medium
+linewidth p1lineplot  medium
+linewidth p2lineplot  medium
+linewidth p3lineplot  medium
+linewidth p4lineplot  medium
+
+// xline, yline
+color xyline gs10
+
+// ** HISTOGRAM SET-UP **
+
+// histogram colors
+color histogram  gs10
+color histogram_line white
+
+// histogram linewidth
+linewidth histogram    vthin
+
+// ** BAR CHART SET-UP **
+
+// bar colors
+color pbar gs10
+color pbar_line white
+
+// bar linewidth
+linewidth bar          vthin
