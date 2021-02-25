@@ -93,7 +93,7 @@ if "`depvar'" == "num_cases" {
 	local p3_text_x = 3.45
 	local title_gap = 0
 	local ylab = "-150(150)600"
-	local panel_num = "d"
+	local panel_num = "D"
 }
 
 if "`depvar'" == "num_deaths" {
@@ -104,7 +104,7 @@ if "`depvar'" == "num_deaths" {
 	local p3_text_x = 3
 	local title_gap = 0
 	local ylab = "-6(6)18"
-	local panel_num = "a"
+	local panel_num = "A"
 }
 
 gsort phase
@@ -272,13 +272,13 @@ if "`depvar'" == "num_cases" {
 	local y_adj = 12
 	local title_gap = 5.5
 	local varname = "cases"
-	local panel_num = "e"
+	local panel_num = "E"
 }
 if "`depvar'" == "num_deaths" {
 	local y_adj = 0.5
 	local title_gap = 2
 	local varname = "deaths"
-	local panel_num = "b"
+	local panel_num = "B"
 	local ylab = "-3(3)9"
 }
 gsort phase
