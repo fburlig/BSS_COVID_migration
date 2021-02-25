@@ -90,7 +90,7 @@ twoway ///
 				labsize(large) tlwidth(`tick_axis_thick')) ///
 		xsize(2.4) /// default is 5.5
 		ysize(2.6565) /// old: 2 default is 4
-		title("{bf: {fontface Arial: a}}", pos(10) size(vhuge))
+		title("{bf: {fontface Arial: A}}", pos(10) size(vhuge))
 
 graph export "$dirpath_outputs_figs/Figure_india_mumbai_cases_last7days_timeseries.pdf", replace
 
