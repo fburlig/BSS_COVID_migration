@@ -198,7 +198,7 @@ twoway ///
 		title("") ///
 		xsc(r(0 102) lw(`tick_axis_thick') noline) ///
 		ysc(lw(`tick_axis_thick') titlegap(*4.75)) ///
-		title("{bf: {fontface Arial: a}}", ///
+		title("{bf: {fontface Arial: A}}", ///
 			pos(10) size(vhuge)) ///
 		name("hotspot_cases", replace)
 
@@ -312,7 +312,7 @@ twoway ///
 			labsize(large)) ///
 		xsc(r(0 102) lw(0.3)) ///
 		ysc(lw(`tick_axis_thick')) ///
-		title("{bf: {fontface Arial: b}}", ///
+		title("{bf: {fontface Arial: B}}", ///
 			pos(10) size(vhuge)) ///
 		name("marginal_effects", replace)
 
