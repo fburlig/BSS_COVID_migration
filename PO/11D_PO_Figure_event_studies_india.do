@@ -92,7 +92,7 @@ local depvar = "cases (thousands)"
 local xsize = 2.4
 local ysize = 5.313
 local xtitle_space = "       "
-local panel_num = "c"
+local panel_num = "C"
 
 * Phase details
 keep if phase == `phase'
