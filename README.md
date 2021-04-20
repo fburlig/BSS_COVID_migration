@@ -1,5 +1,5 @@
 # Burlig, Sudarshan, and Schlauch (2021) replication archive
-This repository contains all data and code required to replicate Burlig, Sudarshan, and Schlauch (2021): "The impact of domestic travel bans on COVID-19 cases is nonlinear in their duration". The main text of the paper can be found in [`BSS_COVID_migration.pdf`](LINK), and the Supplementary Information can be found in [`BSS_COVID_migration_SI.pdf`](LINK) (note that these are currently blank; we will update when permitted by the journal).
+This repository contains all data and code required to replicate Burlig, Sudarshan, and Schlauch (2021): "The impact of domestic travel bans on COVID-19 cases is nonlinear in their duration". The main text of the paper can be found in [`BSS_COVID.pdf`](https://github.com/fburlig/BSS_COVID_migration/blob/master/Paper/BSS_COVID.pdf), and the Appendix can be found in [`BSS_COVID_Appx.pdf`](https://github.com/fburlig/BSS_COVID_migration/blob/master/Paper/BSS_COVID_Appx.pdf).
 
 ### Software
 This repository uses both `Stata` and `R`. All code has been validated to run on `Stata 16 MP` and `R 4.02`, as of February 2021. We also utilize a variety of user-written packages for both programs, listed here:
